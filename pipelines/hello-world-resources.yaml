@@ -1,12 +1,15 @@
 resources:
 - name: repo
   type: git
-  uri: git@github.com:scalasm/concourse-sandbox.git
-  branch: main
+  source: 
+    uri: git@github.com:scalasm/concourse-sandbox.git
+    branch: main
 
 jobs:
 - name: hello-world-job
   plan:
+  - get: repo
+    trigger: true   # tell Concourse to trigger this job when new versions are emitted
   - task: hello-world-task
     config:
       platform: linux
