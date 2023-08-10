@@ -1,5 +1,7 @@
 # Concourse CI sandbox
 
+Hi this is my personal [Concourse CI](https://concourse-ci.org/) sandbox, collecting spikes and recipes that I may find useful across different contexts :)
+
 Pipelines are in [this folder](./pipelines/) .
 
 You can start local Concourse serve using docker compose:
