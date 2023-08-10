@@ -2,7 +2,7 @@ resources:
   - name: repo
     type: git
     source:
-      uri: git@github.com:scalasm/concourse-sandbox.git
+      uri: https://github.com/scalasm/concourse-sandbox.git
       branch: main
 
 jobs:
